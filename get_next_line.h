@@ -31,4 +31,9 @@ char	*ft_strchr(const char *s, int c);
  * 	   #define GET_NEXT_LINE_H
  * 	   ...
  * 	   #endif
- * stuff stops a header file from being included multiple times (which can be bad in terms of redefining static variables, recursive header files etc.) During compilation, if it is the first time the header file has been included, the preprocessor will see that the file hasn't been defined, so will then define it and do the stuff in between it and the '#endif'. Otherwise, if it is not the first time it is encountered, the preprocessor will see that it has already been defined ie '#ifndef...' is false, and so will skip to #endif.*/  
+ * stuff stops a header file from being included multiple times (which can be bad in terms of 
+ * redefining static variables, recursive header files etc.) During compilation, if it is the 
+ * first time the header file has been included, the preprocessor will see that the file hasn't 
+ * been defined, so will then define it and do the stuff in between it and the '#endif'. Otherwise,
+ *  if it is not the first time it is encountered, the preprocessor will see that it has already 
+ *  been defined ie '#ifndef...' is false, and so will skip to #endif.*/  
